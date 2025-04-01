@@ -4,13 +4,13 @@ Bank-Management app in c++, after I failed my c 😭😭.
 # To Do List:
 # Bank Management System - Features  
 
-- [ ] **User Authentication**  
+- [] **User Authentication**  
    - Login/logout system  
    - Admin and customer roles  
 
 - [ ] **Account Management**  
-   [x] Create a new account  
-   [x] View account details  
+   ✅ Create a new account  
+   ✅ View account details  
    - Delete an account  
 
 - [ ] **Transactions**  
