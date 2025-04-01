@@ -9,8 +9,8 @@ Bank-Management app in c++, after I failed my c 😭😭.
    - Admin and customer roles  
 
 - [ ] **Account Management**  
-   - Create a new account  
-   - View account details  
+   [x] Create a new account  
+   [x] View account details  
    - Delete an account  
 
 - [ ] **Transactions**  
