@@ -17,7 +17,6 @@ int accountNoChecker(std::string accNo);
 // To Check the Phone Number
 bool isInteger(const string &str);
 
-// Hey enabwds, here's my somewhat done input with validation and verification
 // could you check if everything is at par
 
 class bankAccount {
@@ -170,7 +169,7 @@ public:
         check = false;
       } else {
         check = true;
-      }
+      } 
     } while (!check);
 
     cout << "Please check your inputted values once again:" << endl;
