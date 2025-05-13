@@ -1,0 +1,3 @@
+C:/Users/Uday's laptop/Desktop/bank-management-cpp/build/CMakeFiles/bank-manager.dir
+C:/Users/Uday's laptop/Desktop/bank-management-cpp/build/CMakeFiles/edit_cache.dir
+C:/Users/Uday's laptop/Desktop/bank-management-cpp/build/CMakeFiles/rebuild_cache.dir
