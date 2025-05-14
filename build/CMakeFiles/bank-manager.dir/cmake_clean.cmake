@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/bank-manager.dir/bankAccount.cpp.obj"
   "CMakeFiles/bank-manager.dir/bankAccount.cpp.obj.d"
+  "CMakeFiles/bank-manager.dir/filehandling.cpp.obj"
+  "CMakeFiles/bank-manager.dir/filehandling.cpp.obj.d"
   "CMakeFiles/bank-manager.dir/main.cpp.obj"
   "CMakeFiles/bank-manager.dir/main.cpp.obj.d"
   "bank-manager.exe"

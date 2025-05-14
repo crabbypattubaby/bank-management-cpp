@@ -17,37 +17,81 @@ bankAccount deserialization(string data){
         throw runtime_error("Invalid Serializaed Format");
     }
 
-    
-
-}
-/*
-//bankAccount deserialization(const std::string& data) {
     bankAccount acc;
-    std::stringstream ss(data);
-    std::string segment;
-    std::vector<std::string> parts;
-
-    while (std::getline(ss, segment, ',')) {
-        parts.push_back(segment);
-    }
-
-    if (parts.size() != 6) {
-        throw std::runtime_error("Invalid serialized data format");
-    }
 
     acc.accountNumber = parts[0];
-    try {
-        acc.balance = std::stoi(parts[1]);
-    } catch (const std::invalid_argument& e) {
-        throw std::runtime_error("Invalid balance format in serialized data");
-    } catch (const std::out_of_range& e) {
-        throw std::runtime_error("Balance value out of range");
-    }
-    acc.name = parts[2];
-    acc.phoneNumber = parts[3];
-    acc.email = parts[4];
-    acc.password = parts[5];
+
+    acc.balance = stoi(parts[1]);
+
+    acc.name = part[2];
+
+    acc.phoneNumber = part[3];
+
+    acc.email = part[4];
+
+    acc.password = part[5];
 
     return acc;
+
 }
-*/
+
+vector<bankAccount> loadAccounts(){
+    ifstream file("accounts.csv");
+    string contents;
+    vector<bankAccount> allAccounts;
+
+    if (file.is_open()){
+    while (getline(file, contents)){
+        allAccounts.push_back(deserialization(contents));
+    } } else {
+        cerr << "error opening file: account.csv";
+    }
+
+    file.close();
+    return allAccounts;
+}
+
+
+void writeAccount(bankAccount& acc){
+    ofstream file("accounts.csv", ios::app);
+    if (file.is_open()) {
+        file << serialization(acc) << endl;
+    } else {
+        cerr << "Error opening file: accounts.csv";
+    }
+    file.close();
+}
+
+void writeAccount(const vector<bankAccount>& allAccounts){
+    ofstream file("accounts.csv");
+    if (file.is_open()){
+        for (const auto& account : allAccounts) {
+            file << serialization(account) << endl;
+        }
+    }
+    file.close();
+}
+
+optional<bankAccount> findAccount(string accNumber) {
+        vector<bankAccount> allAccounts = loadAccounts();
+        bool found = false;
+        for (const auto& account : allAccounts)
+        {
+            if (account.accountNumber == accNumber){
+                return account;
+            }
+        }
+
+        cout << "Account not found";
+        return nullopt;
+}
+
+optional<size_t> findAccountIndex(){
+    vector<bankAccount> allAccounts = loadAccounts();
+}
+
+void deleteAccount(bankAccount account){
+    vector<bankAccount> allAccounts = loadAccounts();
+    
+}
+

@@ -152,6 +152,30 @@ bankAccount.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\bank-manager.dir\build.make CMakeFiles/bank-manager.dir/bankAccount.cpp.s
 .PHONY : bankAccount.cpp.s
 
+filehandling.obj: filehandling.cpp.obj
+.PHONY : filehandling.obj
+
+# target to build an object file
+filehandling.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bank-manager.dir\build.make CMakeFiles/bank-manager.dir/filehandling.cpp.obj
+.PHONY : filehandling.cpp.obj
+
+filehandling.i: filehandling.cpp.i
+.PHONY : filehandling.i
+
+# target to preprocess a source file
+filehandling.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bank-manager.dir\build.make CMakeFiles/bank-manager.dir/filehandling.cpp.i
+.PHONY : filehandling.cpp.i
+
+filehandling.s: filehandling.cpp.s
+.PHONY : filehandling.s
+
+# target to generate assembly for a file
+filehandling.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\bank-manager.dir\build.make CMakeFiles/bank-manager.dir/filehandling.cpp.s
+.PHONY : filehandling.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... bankAccount.obj
 	@echo ... bankAccount.i
 	@echo ... bankAccount.s
+	@echo ... filehandling.obj
+	@echo ... filehandling.i
+	@echo ... filehandling.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

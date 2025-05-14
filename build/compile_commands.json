@@ -10,5 +10,11 @@
   "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\bank-manager.dir\\bankAccount.cpp.obj -c \"C:\\Users\\Uday's laptop\\Desktop\\bank-management-cpp\\bankAccount.cpp\"",
   "file": "C:/Users/Uday's laptop/Desktop/bank-management-cpp/bankAccount.cpp",
   "output": "CMakeFiles/bank-manager.dir/bankAccount.cpp.obj"
+},
+{
+  "directory": "C:/Users/Uday's laptop/Desktop/bank-management-cpp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -std=gnu++17 -o CMakeFiles\\bank-manager.dir\\filehandling.cpp.obj -c \"C:\\Users\\Uday's laptop\\Desktop\\bank-management-cpp\\filehandling.cpp\"",
+  "file": "C:/Users/Uday's laptop/Desktop/bank-management-cpp/filehandling.cpp",
+  "output": "CMakeFiles/bank-manager.dir/filehandling.cpp.obj"
 }
 ]

@@ -11,4 +11,5 @@ add_executable(
     bank-manager
     main.cpp
     bankAccount.cpp
+    filehandling.cpp
 )
